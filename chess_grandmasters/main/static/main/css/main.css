@@ -18,11 +18,12 @@
 }
 
 img {
-    height: 200px;
+    max-width: 100%;
+    height: auto; /* Очень важно для сохранения пропорций */
+    border-radius: 20px;
     position: relative;
     left: 5%;
     bottom: 45%;
-    border-radius: 20px;
 }
 
 .card-container {
