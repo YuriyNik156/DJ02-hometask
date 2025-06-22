@@ -1,10 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% load static %}
+{% extends 'main/layoute.html' %}
 
-</body>
-</html>
+{% block title %}Карточки{% endblock %}
+
+{% block content %}
+
+<h2 id="cards">Сильнейшие шахматисты по рейтингу ФИДЕ</h2>
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'main/image/Magnus Carlsen.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Магнус Карлсен (рейтинг ФИДЕ - 2837)</h5>
+                <p class="card-text"><strong>Свен Магнус Ээн Карлсен</strong> — норвежский шахматист, 16-й чемпион мира (2013—2023)...</p>
+                <a href="https://www.magnuscarlsen.com/" class="btn btn-primary">Перейти на сайт Магнуса Карлсена</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'main/image/Hikaru Nakamura.jpeg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Хикару Накамура (рейтинг ФИДЕ - 2804)</h5>
+                <p class="card-text"><strong>Хикару Накамура</strong> — американский гроссмейстер и стример, чемпион мира по шахматам Фишера...</p>
+                <a href="https://hikarunakamura.com/" class="btn btn-primary">Перейти на сайт Хикару Накамуры</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'main/image/Gukesh Dommaraju.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Гукеш Доммараджу (рейтинг ФИДЕ - 2787)</h5>
+                <p class="card-text"><strong>Гукеш Доммараджу</strong> — индийский шахматист, самый молодой чемпион мира (2024)...</p>
+                <a href="https://ru.wikipedia.org/wiki/Доммараджу,_Гукеш" class="btn btn-primary">Перейти на страницу Гукеша Доммараджу</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'main/image/Ian Nepomniachtchi.jpeg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ян Непомнящий (рейтинг ФИДЕ - 2757)</h5>
+                <p class="card-text"><strong>Ян Александрович Непомнящий</strong> — российский гроссмейстер, финалист матчей за корону...</p>
+                <a href="https://ru.wikipedia.org/wiki/Непомнящий,_Ян_Александрович" class="btn btn-primary">Перейти на страницу Яна Непомнящего</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
