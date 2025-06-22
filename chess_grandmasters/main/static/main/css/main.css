@@ -1,29 +1,42 @@
-.card {
-    width: 350px;
-    height: 650px;
-    background-color: lightgreen;
-    border-radius: 60px;
+/* Стили для карусели */
+.carousel-inner {
+    max-height: 90vh; /* ограничиваем высоту карусели */
+    overflow: hidden;
 }
 
+.carousel-inner img {
+    object-fit: contain; /* сохраняет пропорции */
+    max-height: 90vh;
+    width: 100%;
+    border-radius: 0; /* убрать, если в карусели не нужен скругленный угол */
+}
+
+/* Универсальный img для карточек — сделаем классом, а не глобально */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Карточки */
+.card {
+    width: 350px;
+    /* убираем жесткую высоту, min-height можно оставить для внешнего вида */
+    height: auto;
+    background-color: lightgreen;
+    border-radius: 60px;
+    overflow: hidden; /* обрезаем лишнее */
+}
+
+/* Остальное без изменений */
 .photo {
     height: 40%;
     padding: 40px;
 }
 
 .info {
-    height: 40%;
-    padding: 40px;
-    position: relative;
-    bottom: 50%;
-}
-
-img {
-    max-width: 100%;
-    height: auto; /* Очень важно для сохранения пропорций */
-    border-radius: 20px;
-    position: relative;
-    left: 5%;
-    bottom: 45%;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .card-container {
@@ -42,6 +55,6 @@ img {
 }
 
 .card:hover {
-            transform: translateY(-20px);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    transform: translateY(-20px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
 }
