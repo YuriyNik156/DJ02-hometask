@@ -15,11 +15,13 @@
 
 <body>
     <aside>
-        <img src="{% static 'main/image/Zerocoder.jpg' %}" alt="Логотип Зерокодер" width="150">
+        <img src="{% static 'main/image/Логотип шахмат.webp' %}" alt="Шахматы" width="150">
         <span>ZeroDjango</span>
         <ul>
-            <li><a href="{% url 'home' %}">Главная</a></li>
-            <li><a href="{% url 'page2' %}">Второстепенная</a></li>
+            <li><a href="{% url 'home' %}">Слайд-шоу</a></li>
+            <li><a href="{% url 'cards' %}">Карточки</a></li>
+            <li><a href="{% url 'accordion' %}">Аккордеон</a></li>
+            <li><a href="{% url 'contacts' %}">Контакты</a></li>
         </ul>
     </aside>
     <main>
